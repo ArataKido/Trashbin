@@ -5,5 +5,8 @@ respone = requests.get(f"https://imdb-api.com/en/API/Top250Movies/{API_KEY_IMDB}
 list_of_films = []
 for i in range(0,10):
 	list_of_films.append(respone[i]['title'])
-print(f"{list_of_films}\n\n")
+# print(f"{list_of_films}\n\n")
 print("".join(list_of_films))
+
+for i in range(0,len(list_of_films)):
+	print (list_of_films[i])
